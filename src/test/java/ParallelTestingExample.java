@@ -7,8 +7,9 @@ import org.junit.jupiter.api.parallel.ExecutionMode;
 import java.time.Duration;
 import java.time.Instant;
 
-// @Execution(ExecutionMode.CONCURRENT)
-public class TagTests
+// Comment out the following line to run tests sequentially
+@Execution(ExecutionMode.CONCURRENT)
+public class ParallelTestingExample
 {
     static Instant startTime;
 

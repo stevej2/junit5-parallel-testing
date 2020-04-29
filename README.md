@@ -1,1 +1,1 @@
-To reprouce the issue, you just need to run "mvn clean install".
+Basic example of Junit5 parallel testing. Also includes examples using the @ResourceLock annotation.
