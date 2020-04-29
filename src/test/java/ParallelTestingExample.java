@@ -9,6 +9,7 @@ import java.time.Instant;
 
 // Comment out the following line to run tests sequentially
 @Execution(ExecutionMode.CONCURRENT)
+
 public class ParallelTestingExample
 {
     static Instant startTime;

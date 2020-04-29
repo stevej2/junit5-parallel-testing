@@ -59,7 +59,7 @@ public class ResourceLockExample
     @ResourceLock(value = "DATABASE_1", mode = READ)
     public void exampleRead() throws InterruptedException {
         Thread.sleep(5000);
-        System.out.println("testTag4");
+        System.out.println("exampleRead");
     }
 
     @Test
@@ -67,7 +67,7 @@ public class ResourceLockExample
     @ResourceLock(value = "DATABASE_1", mode = READ)
     public void exampleRead2() throws InterruptedException {
         Thread.sleep(5000);
-        System.out.println("testTag4");
+        System.out.println("exampleRead2");
     }
 
     @Test
@@ -75,6 +75,6 @@ public class ResourceLockExample
     @ResourceLock(value = "DATABASE_1", mode = READ_WRITE)
     public void exampleWrite() throws InterruptedException {
         Thread.sleep(5000);
-        System.out.println("testTag4");
+        System.out.println("exampleWrite");
     }
 }
