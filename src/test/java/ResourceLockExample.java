@@ -56,7 +56,7 @@ public class ResourceLockExample
 
     @Test
     // READ tests can run in parallel, but NOT with a READ_WRITE test
-    @ResourceLock(value = "DATABASE_1", mode = READ)
+    @ResourceLock(value = "FILE_1", mode = READ)
     public void exampleRead() throws InterruptedException {
         Thread.sleep(5000);
         System.out.println("exampleRead");
@@ -64,7 +64,7 @@ public class ResourceLockExample
 
     @Test
     // READ tests can run in parallel, but NOT with a READ_WRITE test
-    @ResourceLock(value = "DATABASE_1", mode = READ)
+    @ResourceLock(value = "FILE_1", mode = READ)
     public void exampleRead2() throws InterruptedException {
         Thread.sleep(5000);
         System.out.println("exampleRead2");
@@ -72,7 +72,7 @@ public class ResourceLockExample
 
     @Test
     // READ_WRITE tests enforce exclusive access to the resource
-    @ResourceLock(value = "DATABASE_1", mode = READ_WRITE)
+    @ResourceLock(value = "FILE_1", mode = READ_WRITE)
     public void exampleWrite() throws InterruptedException {
         Thread.sleep(5000);
         System.out.println("exampleWrite");
